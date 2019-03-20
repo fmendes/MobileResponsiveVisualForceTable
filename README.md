@@ -20,9 +20,9 @@ styleClass="mobileFriendly"
 html-data-header="your column header text"
 ```
 
-The result is below (animated GIF showing the table responding to screen resizing):
+The result is below:
 
-![alt text](http://url/to/img.png)
+![animated GIF showing the table responding to screen resizing](https://github.com/fmendes/MobileResponsiveVisualForceTable/blob/master/TablesMobileFriendly.gif)
 
 
 
