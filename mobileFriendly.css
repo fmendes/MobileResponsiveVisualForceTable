@@ -49,6 +49,7 @@
     (min-device-width: 450px) and (max-device-width: 767px)  {
 
         /* force table and its elements to behave as individual blocks one per line */
+	/* increase font size */
         table.mobileFriendly,
         table.mobileFriendly thead,
         table.mobileFriendly tbody,
@@ -69,7 +70,7 @@
         /* add border to make rows distinct */
 	    table.mobileFriendly tr { border: 1px solid gray; }
 
-        /* show each column value in the middle */
+        /* show each column value in its own line */
         table.mobileFriendly td {
             border: none!important;
             border-bottom: 1px solid whitesmoke;
@@ -83,10 +84,12 @@
             top: 0.25rem;
             left: 0.25rem;
         }
+        /* make column value appear in its own line */
         table.mobileFriendly td span {
             padding-left: 1rem;
             display: block;
         }
+        /* make column value appear below the fake label */
         table.mobileFriendly td span:before {
             content: ' ';
             display: block;
