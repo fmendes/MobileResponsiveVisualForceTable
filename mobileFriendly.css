@@ -1,0 +1,95 @@
+
+
+    @media
+    only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+        /* force table and its elements to behave as individual blocks one per line */
+        table.mobileFriendly,
+        table.mobileFriendly thead,
+        table.mobileFriendly tbody,
+        table.mobileFriendly th,
+        table.mobileFriendly td,
+        table.mobileFriendly tr {
+            display: block;
+        }
+        /* hide headers outside the screen */
+        table.mobileFriendly thead tr,
+        table.mobileFriendly thead th {
+		    position: absolute;
+		    top: -9999px;
+		    left: -9999px;
+	    }
+
+        /* add border to make rows distinct */
+	    table.mobileFriendly tr { border: 1px solid gray; }
+
+        /* show each column value in the middle */
+        table.mobileFriendly td {
+            border: none!important;
+            border-bottom: 1px solid whitesmoke;
+            position: relative!important;
+            padding-left: 50%!important;
+        }
+        /* show header as a fake label on the left side */
+        /* using top/left to emulate padding */
+        table.mobileFriendly td:before {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            content: attr(data-header);
+        }
+    }
+
+    @media
+    only screen and (max-width: 450px),
+    (min-device-width: 450px) and (max-device-width: 767px)  {
+
+        /* force table and its elements to behave as individual blocks one per line */
+        table.mobileFriendly,
+        table.mobileFriendly thead,
+        table.mobileFriendly tbody,
+        table.mobileFriendly th,
+        table.mobileFriendly td,
+        table.mobileFriendly tr {
+            font-size: 120%;
+            display: block;
+        }
+        /* hide headers outside the screen */
+        table.mobileFriendly thead tr,
+        table.mobileFriendly thead th {
+		    position: absolute;
+		    top: -9999px;
+		    left: -9999px;
+	    }
+
+        /* add border to make rows distinct */
+	    table.mobileFriendly tr { border: 1px solid gray; }
+
+        /* show each column value in the middle */
+        table.mobileFriendly td {
+            border: none!important;
+            border-bottom: 1px solid whitesmoke;
+            position: relative!important;
+            padding-left: 0!important;
+        }
+        /* show header as a fake label on the left side */
+        /* using top/left to emulate padding */
+        table.mobileFriendly td:before {
+            content: attr(data-header);
+            top: 0.25rem;
+            left: 0.25rem;
+        }
+        table.mobileFriendly td span {
+            padding-left: 1rem;
+            display: block;
+        }
+        table.mobileFriendly td span:before {
+            content: ' ';
+            display: block;
+            padding-top: 2.5rem;
+        }
+    }
