@@ -30,6 +30,7 @@
             border-bottom: 1px solid whitesmoke;
             position: relative!important;
             padding-left: 50%!important;
+            padding-bottom: 10px;
         }
         /* show header as a fake label on the left side */
         /* using top/left to emulate padding */
@@ -41,6 +42,7 @@
             padding-right: 10px;
             white-space: nowrap;
             content: attr(data-header);
+            font-weight: bold;
         }
     }
 
@@ -83,6 +85,8 @@
             content: attr(data-header);
             top: 0.25rem;
             left: 0.25rem;
+            display: contents;
+            font-weight: bold;
         }
         /* make column value appear in its own line */
         table.mobileFriendly td span {
