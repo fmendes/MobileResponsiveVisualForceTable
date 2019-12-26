@@ -17,7 +17,7 @@ styleClass="mobileFriendly"
 ```
 3. for each column in your table, add the attribute below containing the column header to display
 ```
-html-data-header="your column header text"
+html-data-header="your column header text ending with a space"
 ```
 
 The result is below:
