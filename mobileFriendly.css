@@ -82,7 +82,7 @@
         /* show header as a fake label on the left side */
         /* using top/left to emulate padding */
         table.mobileFriendly td:before {
-            content: attr(data-header);
+            content: attr(data-header) " ";
             top: 0.25rem;
             left: 0.25rem;
             display: contents;
